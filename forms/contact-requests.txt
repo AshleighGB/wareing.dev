@@ -1,0 +1,14 @@
+CONTACT REQUESTS
+
+New Contact Request:  23:42 25th October
+Name: tset
+Email: test@test.com
+Type: test
+Message: tset
+
+New Contact Request:  23:47 25th October
+Name: testing another form
+Email: formtest@test.com
+Type: another test
+Message: testing ttttttttttttttt
+

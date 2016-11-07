@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^create$ createsnip.php [NC,QSA]
+RewriteRule ^destroy$ deletesnip.php [NC,QSA]

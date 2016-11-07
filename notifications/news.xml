@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<visual lang="en-US" version="2">
+    <binding template="TileSquare150x150PeekImageAndText04" branding="logo">
+      <image id="1" src="https://mc-heads.net/avatar/5efe6392-d0f3-4438-99e5-19d463956621/150.png"/>
+      <text id="1">I now have a Live Tile!</text> 
+    </binding>
+
+    <binding template="TileWide310x150ImageAndText01" branding="logo">
+      <image id="1" src="https://mc-heads.net/avatar/5efe6392-d0f3-4438-99e5-19d463956621/150.png"/>
+      <text id="1">I now have a Live Tile!</text> 
+    </binding>
+  
+    <binding template="TileSquare310x310SmallImagesAndTextList01" branding="logo">
+      <image id="1" src="https://mc-heads.net/avatar/5efe6392-d0f3-4438-99e5-19d463956621/310.png"/>
+      <text id="1">I now have a Live Tile!</text>
+    </binding>
+  </visual>

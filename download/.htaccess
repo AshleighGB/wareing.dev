@@ -1,0 +1,5 @@
+# instruct browser to download multimedia files
+AddType application/octet-stream .avi
+AddType application/octet-stream .mpg
+AddType application/octet-stream .wmv
+AddType application/octet-stream .mp3

@@ -1,0 +1,10 @@
+$ip = $_SERVER['REMOTE_ADDR'];
+//open up the log file
+$file = fopen('logs/visitors.log', 'a');
+//write the time of access
+$time = date('H:i dS F');
+fwrite($file, $time."\n");
+//write the users IP address
+fwrite( $file, $ip."\n");
+fwrite( $file, "\n");
+fclose( $file );
