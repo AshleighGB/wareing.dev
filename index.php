@@ -1,12 +1,3 @@
-<?php 
-if ($_GET['cf_refresh']) {
-  $dev_refresh = "<meta http-equiv='refresh' content='15'/>";
-} else {
-  $version = "4.6";
-  $token = md5(base64_encode($version));
-  $dev_refresh = "<meta name='version_token' content='$token'/>";
-}
-?>
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
