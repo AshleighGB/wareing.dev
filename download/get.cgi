@@ -1,4 +1,4 @@
- <?php include_once ('includes/vars.inc.php');?>
+<?php include('includes/vars.inc.php');?>
 <!DOCTYPE html>
 
 <html lang="en" prefix="og: http://ogp.me/ns#">
