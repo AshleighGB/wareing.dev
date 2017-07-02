@@ -1,0 +1,54 @@
+WEB SERVER
+#cloud-config
+users:
+  - name: stadmin
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYtRQRnPsCVa4w4bY2e9k/PJ40z/KGsEmFDINqkpCD0HAHMPR7JhJN4TpRwqjXoMl05ZabgW5TEX3IwQaqxf9xGi07EYIrC/W/Goujf3j+crxSAs7JiPkovQMOUnmrrZlMnasBrenu7k8VJXZFWsYVv2GE+LEXwwhlP/lyHd+0No/Vfu2dj28ZeK6tg5RnuamMugCD2PioSgUwNg31MnvjDyq3+mcZHKY5AXT6iQeyhYnUnSvs26+W+jijSTy/ydU93+EAahu0kAWlpapZKs50YMtXuQG7Y4LAwsAYGuW/ju2Rrk+qBQZ1cH/02pOs4NeAkfd8IzNt+AqWoDv3DN2v joshuawareing@outlook.com
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+runcmd:
+  - sed -i -e '/^Port/s/^.*$/Port 5960/' /etc/ssh/sshd_config
+  - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/'/etc/ssh/sshd_config
+  - sed -i -e '$aAllowUsers stadmin' /etc/ssh/sshd_config
+  - service ssh restart
+  - add-apt-repository ppa:certbot/certbot
+  - apt-get -y update
+  - apt-get -y upgrade
+  - apt-get -y install apache2 php
+  - a2enmod rewrite  
+  - apt-get -y install python-certbot-apache
+  - curl -s http://169.254.169.254/metadata/v1/hostname > /etc/hostname
+  - hostname -F /etc/hostname
+  - curl -sSL https://agent.digitalocean.com/install.sh | sh
+  - reboot
+chpasswd:
+  list: |
+    root:R0sebr1dge
+    stadmin:service
+  expire: False
+
+#cloud-config
+users:
+  - name: stadmin
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYtRQRnPsCVa4w4bY2e9k/PJ40z/KGsEmFDINqkpCD0HAHMPR7JhJN4TpRwqjXoMl05ZabgW5TEX3IwQaqxf9xGi07EYIrC/W/Goujf3j+crxSAs7JiPkovQMOUnmrrZlMnasBrenu7k8VJXZFWsYVv2GE+LEXwwhlP/lyHd+0No/Vfu2dj28ZeK6tg5RnuamMugCD2PioSgUwNg31MnvjDyq3+mcZHKY5AXT6iQeyhYnUnSvs26+W+jijSTy/ydU93+EAahu0kAWlpapZKs50YMtXuQG7Y4LAwsAYGuW/ju2Rrk+qBQZ1cH/02pOs4NeAkfd8IzNt+AqWoDv3DN2v joshuawareing@outlook.com
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+runcmd:
+  - sed -i -e '/^Port/s/^.*$/Port 5960/' /etc/ssh/sshd_config
+  - sed -i -e '/^PermitRootLogin/s/^.*$/PermitRootLogin no/'/etc/ssh/sshd_config
+  - sed -i -e '$aAllowUsers stadmin' /etc/ssh/sshd_config
+  - service ssh restart
+  - curl -s http://169.254.169.254/metadata/v1/hostname > /etc/hostname
+  - hostname -F /etc/hostname
+  - curl -sSL https://agent.digitalocean.com/install.sh | sh
+  - reboot
+chpasswd:
+  list: |
+    root:R0sebr1dge
+    stadmin:service
+  expire: False
+
+  ssh -l stadmin -p5960 srv-01.backend.hostedwebapp.io 'curl -sSL https://agent.digitalocean.com/install.sh | sh' && ssh -l stadmin -p5960 srv-02.backend.hostedwebapp.io 'curl -sSL https://agent.digitalocean.com/install.sh | sh' && ssh -l stadmin -p5960 srv-03.backend.hostedwebapp.io 'curl -sSL https://agent.digitalocean.com/install.sh | sh' && ssh -l stadmin -p5960 srv-04.backend.hostedwebapp.io 'curl -sSL https://agent.digitalocean.com/install.sh | sh'

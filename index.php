@@ -1,3 +1,6 @@
+<?php 
+require_once('includes/vars.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
