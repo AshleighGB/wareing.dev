@@ -30,7 +30,7 @@ require_once('includes/vars.inc.php');
 
 <script src="/js/jquery-2.1.1.js"></script>
 <script src="/js/main.js"></script> <!-- Resource jQuery -->
-<script src="//use.typekit.net/dwg0wol.js"></script>
+<script src="//use.typekit.net/dhg0wol.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <title>Joshua Wareing &raquo; Developer</title>
