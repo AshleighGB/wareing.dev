@@ -4,11 +4,11 @@ require_once('includes/vars.inc.php');
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
-<meta name="google-site-verification" content="AIpS9e6Z2y1q4aVbRn2XXmbxoVMzuQO_GwWG3xtCBRE" />
+<meta name="google-site-verification" content="Y9_5kbOnit2V5PBI-GyD171d8XH_KRoqMSupD6Wnc-U" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="og:title" content="Joshua Wareing &raquo; Developer"/>
-<meta name="og:url" content="http://wareing.xyz"/>
-<meta name="og:secure_url" content="https://wareing.xyz"/>
+<meta name="og:url" content="http://joshuawareing.me"/>
+<meta name="og:secure_url" content="https://joshuawareing.me"/>
 <meta name="og:image" content="/images/14712460_1442865999060850_1504121269905815240_o.jpg"/>
 <meta name="og:type" content="website"/>
 <meta name="og:description" content="I share code & Random things that happen each day."/>
@@ -30,28 +30,12 @@ require_once('includes/vars.inc.php');
 
 <script src="/js/jquery-2.1.1.js"></script>
 <script src="/js/main.js"></script> <!-- Resource jQuery -->
-<script src="//use.typekit.net/qul4etr.js"></script>
+<script src="//use.typekit.net/dwg0wol.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
 <title>Joshua Wareing &raquo; Developer</title>
-<link rel='dns-prefetch' href='//notify.wareing.xyz' />
-<link rel='dns-prefetch' href='//notify-ssl.wareing.xyz' />
-<link rel="alternate" type="application/rss+xml" title="Joshua Wareing &raquo; Feed" href="//notify.wareing.xyz/blogfeed.xml" />
-<link rel="alternate" type="application/rss+xml" title="Joshua Wareing &raquo; Comments Feed" href="//notify-ssl.wareing.xyz/blogfeed.xml" />
-  <style type="text/css">
-img.wp-smiley,
-img.emoji {
-display: inline !important;
-border: none !important;
-box-shadow: none !important;
-height: 1em !important;
-width: 1em !important;
-margin: 0 .07em !important;
-vertical-align: -0.1em !important;
-background: none !important;
-padding: 0 !important;
-}
-</style>
+<link rel='dns-prefetch' href='//notify.joshuawareing.me' />
+<link rel='dns-prefetch' href='//notify-ssl.joshuawareing.me' />
 <link rel='stylesheet' id='main-css'  href='/css/style.css?ver=4.6.1' type='text/css' media='all' />
   <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
   
@@ -125,11 +109,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <nav>
       <ul class="cd-primary-nav">
         <li><a href="/">Go Home <span>Beam me up, Scotty</a></li>
-        <li><a href="/downloads.cgi">Downloads <span>View Downloads Gallery</span></a></li>
-        <li><a href="/projects.cgi?status=ongoing">Current Projects <span>Stuff I'm currently working on</span></a></li>
-        <li><a href="/projects.cgi?status=completed">Completed Projects<span>Completed Stuff</span></a></li>
+        <li><a href="/projects/view/downloads">Downloads <span>View Downloads Gallery</span></a></li>
+        <li><a href="/projects">Current Projects <span>Stuff I'm currently working on</span></a></li>
+        <li><a href="/projects">Completed Projects<span>Completed Stuff</span></a></li>
         <!-- <li><a href="/2016">2016 Goals <span>I want to make &amp; ship all the things!</span></a></li> -->
-        <li><a href="/blog.cgi">Blog <span>Thoughts &amp; Videos</span></a></li>
+        <li><a href="/blog">Blog <span>Thoughts &amp; Videos</span></a></li>
       </ul>
     </nav>
   </div><!-- .cd-half-block -->
